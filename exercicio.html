@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<script>
+        let nomeAnimal, idadeAnimal, tipoAnimal, raça, cor, idade, nomeDono, telefone, endereco
+        i=0
+
+        alert("Dados do dono do animal")
+        nomeDono = prompt("Digite seu nome")
+        telefone = parseInt(prompt("Digite seu telefone"))
+        endereco = prompt("Digite seu endereço")
+        alert("Dados do seu pet")
+        nomeAnimal = prompt("Digite o nome do seu pet")
+        idadeAnimal = prompt("Digite a idade do seu pet")
+        raça = prompt("Digite a raça do pet")
+        cor = prompt("Digite a cor do seu pet")
+        idade = prompt("Digite a idade do seu pet")
+        tipoAnimal = parseInt(prompt("Caso seu pet for cachorro digite 0, gato digite 1, passáro digite 2 e se for outros digite 3"))
+        tipo = ["cachorro","gatos","aves", "outros"]
+        if (tipoAnimal == "0"){
+            tipoAnimal = tipo[0]
+            cachorros = new Array()
+            cachorros[i] = nomeAnimal
+            i++
+        }else if (tipoAnimal =="1"){
+            tipoAnimal = tipo[1]
+            gatos = new Array()
+            gatos[i] = nomeAnimal
+            i++
+        }else if (tipoAnimal =="2"){
+            tipoAnimal = tipo[2]
+            aves = new Array()
+            aves[i] = nomeAnimal
+            i++
+        }else if(tipoAnimal =="3"){
+            tipoAnimal = tipo[3]
+            outros = new Array()
+            outros[i] = nomeAnimal
+            i++
+        }else{
+            tipoAnimal = tipo[3]
+            outros = new Array()
+            outros[i] = nomeAnimal
+            i++
+        }
+            
+  
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

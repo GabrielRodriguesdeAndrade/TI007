@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - JS</title>
+    <script>
+/*
+        let numero
+        //estrutura condicional SE
+        if((numero = parseInt(prompt("Digite um numero inteiro"))) == 0){
+            //alert("ZERO")
+            resp="Zero"
+        }else if (numero % 2 == 0){
+            //alert("Par")
+            resp="Par"
+        }else{
+            //alert("Impar")
+            resp="Impar"
+        }
+        alert(resp+"!!!")
+*/
+        
+      //Estrura condicional repetição - do... while repetira até dar valor espefico falso
+
+        let nome, materia, bim1, bim2, bim3, bim4, media
+
+        nome = prompt("Digite o nome do aluno")
+        materia = prompt("Digite a materia")
+        do{
+            (bim1 = parseFloat(prompt("Digite a nota do primeiro bimestre")))     
+        } while (bim1 >10 || bim1 <0)
+        do {
+            (bim2 = parseFloat(prompt("Digite a nota do segundo bimestre")))
+        }while (bim2 >10 || bim2 <0)
+        do {
+            (bim3 = parseFloat(prompt("Digite a nota do terceiro bimestre")))
+        }while (bim3 >10 || bim3 <0)
+        do {
+            (bim4 = parseFloat(prompt("Digite a nota do quarto bimestre")))
+        }while (bim4 >10 || bim4 <0)
+            
+        media = (bim1+bim2+bim3+bim4)/4
+        
+        if (media >=7){
+            resp = "Aprovado"
+        }else if (media >= 6.5){
+            resp = "Conselho"
+        }else if (media >= 4){
+            resp = "Recuperação"
+        }else{
+            resp="Reprovado"
+        }
+            
+        alert("O aluno " + nome + " na materia " + materia + " ,obteve a media de " + media + " e está  " + resp)
+
+
+        numero1 = parseInt(prompt("Digite um número inteiro de 0 até 5"))
+
+        // Estrutura condicional do caso
+
+        switch(numero1){
+            case 0:
+                resp = "zero"
+                break
+            case 1:
+                resp = "um"
+                break
+            case 2:
+                resp = "dois"
+                break
+            case 3:
+                resp = "tres"
+                break
+            case 4:
+                resp = "quatro"
+                break
+            case 5:
+                resp = "cinco"
+                break
+                default:
+                    resp ="o numero fornacido diferente de 0 até  5"
+        }
+        alert(resp)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
